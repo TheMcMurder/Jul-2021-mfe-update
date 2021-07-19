@@ -30,3 +30,11 @@ export default ({ children, className = "javascript" }) => {
     </Highlight>
   );
 };
+
+export function InlineCode({className, children}) {
+  return (
+    <span className={cls(className, 'bg-yellow-400 text-yellow-700 font-italic px-1 rounded')}>
+      {children}
+    </span>
+  )
+}

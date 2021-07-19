@@ -6,7 +6,7 @@ import { MDXProvider } from "@mdx-js/react";
 import Deck from "./components/Deck";
 import Slide from "./components/Slide";
 import Appear from "./components/Appear";
-import Code from "./components/Code";
+import Code, {InlineCode} from "./components/Code";
 import Aside from "./components/Aside";
 import A from "./components/A";
 import { InProgress, Done, NotStarted, Early } from "./components/Progress";
@@ -32,6 +32,7 @@ render(
       Done,
       NotStarted,
       MigrationRequirements,
+      InlineCode,
       code: Code,
       inlineCode: Base("code", "bg-gray-200 px-1 rounded"),
       a: A,
