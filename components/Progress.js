@@ -9,6 +9,7 @@ export default function Progress(props) {
   const { className, children, status='in-progress'} = props
   const classByStatus = {
     'in-progress': 'text-blue-500 animate-pulse',
+    'early-in-progress': 'text-orange-500 animate-pulse',
     'done': 'text-black font-bold',
     'not-started': 'text-red-600',
   }
@@ -21,6 +22,10 @@ export default function Progress(props) {
 
 export function InProgress(props) {
   return <Progress status={'in-progress'} {...props}/>
+}
+
+export function Early(props) {
+  return <Progress status={'early-in-progress'} {...props}/>
 }
 
 export function Done(props) {

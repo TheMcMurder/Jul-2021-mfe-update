@@ -12,9 +12,9 @@
 - <Appear>Migration status update</Appear>
 - <Appear>When can _my_ team migrate?</Appear>
 - <Appear>Migraton tools and tooling</Appear>
-- <Appear>Technical details where it makes sense</Appear>
 - <Appear>Why, IMO ,Star Wars Episode 8 is among the best Star Wars movies ever made</Appear>
 - <Appear>What can I do now to make migration easier?</Appear>
+- <Appear>Technical details where it makes sense</Appear>
 
 ---
 
@@ -25,11 +25,7 @@
 import PreAlphaImage from './img/pre-alpha.png';
 
 # Migration Overview
-<img
-  src={PreAlphaImage}
-  className='mx-auto absolute inset-0 p-10'
-  alt='This image acts as a sub-title, illustrating that the content below is discussing the pre-alpha stage of the migration'
-/>
+<StageImage src={PreAlphaImage} stage='pre-alpha' />
 
 - <Appear>Setup SystemJS/run-time loading</Appear>
 - <Appear>Extract shared dependencies</Appear>
@@ -64,11 +60,7 @@ import PreAlphaImage from './img/pre-alpha.png';
 import AlphaImage from './img/alpha.png';
 
 # Migration Overview
-<img
-  src={AlphaImage}
-  className='mx-auto absolute inset-0 p-10'
-  alt='This image acts as a sub-title, illustrating that the content below is discussing the alpha stage of the migration'
-/>
+<StageImage src={AlphaImage} stage='alpha' />
 
 - <Appear>Extract Primary Navigation</Appear>
 - <Appear>Extract Phoenix</Appear>
@@ -104,9 +96,22 @@ import BetaImage from './img/beta.png';
 - <Appear><Done>Migrate Blueprints</Done></Appear>
 - <Appear><InProgress>Migrate Reporting V2</InProgress></Appear>
 - <Appear><InProgress>Migrate Scenario Planner</InProgress></Appear>
+
+## Preparing for Future migrations
+- <Appear><InProgress>Improve docs from feedback</InProgress></Appear>
 - <Appear><InProgress>Extract Layout System (mfe-slots)</InProgress></Appear>
 - <Appear><InProgress>Extract Page System (mfe-slots)</InProgress></Appear>
-- <Appear><InProgress>MFE React Spectrum</InProgress></Appear>
+- <Appear><Early>MFE React Spectrum</Early></Appear>
+
+---
+
+# When can [team-area] migrate?
+
+<MigrationRequirements />
+
+---
+
+# Migration Tools and Tooling
 
 ---
 

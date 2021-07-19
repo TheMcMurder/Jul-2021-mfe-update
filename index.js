@@ -9,8 +9,9 @@ import Appear from "./components/Appear";
 import Code from "./components/Code";
 import Aside from "./components/Aside";
 import A from "./components/A";
-import { InProgress, Done, NotStarted } from "./components/Progress";
+import { InProgress, Done, NotStarted, Early } from "./components/Progress";
 import StageImage from './components/StageImage';
+import MigrationRequirements from "./components/MigrationRequirements";
 
 import MDXContent from "./content.mdx";
 
@@ -26,9 +27,11 @@ render(
       Appear,
       Aside,
       StageImage,
+      Early,
       InProgress,
       Done,
       NotStarted,
+      MigrationRequirements,
       code: Code,
       inlineCode: Base("code", "bg-gray-200 px-1 rounded"),
       a: A,
