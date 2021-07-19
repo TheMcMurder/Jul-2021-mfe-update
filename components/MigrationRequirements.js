@@ -1,5 +1,6 @@
 import React from 'react'
 import cls from "classnames";
+import Appear from './Appear'
 
 const preAlphaRequirements = [
   'SystemJS',
@@ -69,18 +70,20 @@ function MigrationStage ({name, requirements, active = false, complete = true}) 
         </div>
         <hr className='border-t-2 border-orange-700 w-full'/>
         <div className='p-2 flex-1'>
-          <ul>
-            {requirements.map((item, index) => {
-              return (
-                <li
-                  key={item}
-                  className={cls({"font-bold": index === 0 && name !== 'Pre-Alpha'}, 'text-white')}
-                >
-                  {item}
-                </li>
-              )
-            })}
-          </ul>
+          <Appear>
+            <ul>
+              {requirements.map((item, index) => {
+                return (
+                  <li
+                    key={item}
+                    className={cls({ "font-bold": index === 0 && name !== 'Pre-Alpha' }, 'text-white')}
+                  >
+                    {item}
+                  </li>
+                )
+              })}
+            </ul>
+          </Appear>
         </div>
         <hr className='border-t-2 border-orange-700 w-full'/>
         <div className='p-2'>
