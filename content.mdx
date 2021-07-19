@@ -1,0 +1,115 @@
+# MFE Update July 2021
+
+## powered by [minideck](https://github.com/filoxo/minideck)
+
+---
+
+> "Be mindful of the future, but not at the expense of the moment."
+
+---
+
+# What we will cover
+- <Appear>Migration status update</Appear>
+- <Appear>When can _my_ team migrate?</Appear>
+- <Appear>Migraton tools and tooling</Appear>
+- <Appear>Technical details where it makes sense</Appear>
+- <Appear>Why, IMO ,Star Wars Episode 8 is among the best Star Wars movies ever made</Appear>
+- <Appear>What can I do now to make migration easier?</Appear>
+
+---
+
+# What we will not cover
+- <Appear>Other stuff</Appear>
+
+---
+import PreAlphaImage from './img/pre-alpha.png';
+
+# Migration Overview
+<img
+  src={PreAlphaImage}
+  className='mx-auto absolute inset-0 p-10'
+  alt='This image acts as a sub-title, illustrating that the content below is discussing the pre-alpha stage of the migration'
+/>
+
+- <Appear>Setup SystemJS/run-time loading</Appear>
+- <Appear>Extract shared dependencies</Appear>
+- <Appear>Turn QS into an MFE</Appear>
+- <Appear>
+  Split common utilites out of Quicksilver
+  <div
+    className='rounded-lg p-1 px-4 border-2 text-white'
+    style={{backgroundColor: '#82c91e', borderColor: '#2b8a3e'}}
+  >
+    Common Utilities
+    <ul>
+      <li>
+        User authentication
+      </li>
+      <li>
+        API helper
+      </li>
+      <li>
+        i18n
+      </li>
+      <li>
+        Feature Toggles
+      </li>
+    </ul>
+  </div>
+  </Appear>
+- <Appear>Use common utilites in Quicksilver</Appear>
+
+---
+
+import AlphaImage from './img/alpha.png';
+
+# Migration Overview
+<img
+  src={AlphaImage}
+  className='mx-auto absolute inset-0 p-10'
+  alt='This image acts as a sub-title, illustrating that the content below is discussing the alpha stage of the migration'
+/>
+
+- <Appear>Extract Primary Navigation</Appear>
+- <Appear>Extract Phoenix</Appear>
+- <Appear>Extract Notification Hub</Appear>
+- <Appear>Extract Modals and Shims</Appear>
+- <Appear>
+  Use Extracted items in Quicksilver
+  <div
+    className='rounded-lg p-1 px-4 border-2 text-white'
+    style={{backgroundColor: '#82c91e', borderColor: '#2b8a3e'}}
+  >
+    <ul>
+      <li>
+        MFE Phoenix
+      </li>
+      <li>
+        MFE Modals and Shims
+      </li>
+      <li>
+        MFE i18n
+      </li>
+    </ul>
+  </div>
+</Appear>
+
+---
+
+import BetaImage from './img/beta.png';
+
+# Migration Overview
+<StageImage src={BetaImage} stage='beta' />
+
+- <Appear><Done>Migrate Blueprints</Done></Appear>
+- <Appear><InProgress>Migrate Reporting V2</InProgress></Appear>
+- <Appear><InProgress>Migrate Scenario Planner</InProgress></Appear>
+- <Appear><InProgress>Extract Layout System (mfe-slots)</InProgress></Appear>
+- <Appear><InProgress>Extract Page System (mfe-slots)</InProgress></Appear>
+- <Appear><InProgress>MFE React Spectrum</InProgress></Appear>
+
+---
+
+## Thanks! 
+
+[Back to beginning](/0)
