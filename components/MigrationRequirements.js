@@ -95,7 +95,7 @@ function MigrationStage ({name, requirements, active = false, complete = true}) 
 
 function StateText ({children, active = false, complete = true, className, base = 'text-orange-700'}) {
   const evalObj = {
-    'text-blue-700': active,
+    'text-blue-700 animate-pulse': active,
     'text-gray-700': !active && !complete,
   }
   evalObj[base] = !active && complete
